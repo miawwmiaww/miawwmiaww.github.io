@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRI Cabang Metro Lampung | Solusi Keuangan Terbaik</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+      }
+
+      .hero-gradient {
+        background: linear-gradient(135deg, #0056b3 0%, #003366 100%);
+      }
+
+      .btn-primary {
+        background: linear-gradient(90deg, #ff7b25 0%, #ffa645 100%);
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(255, 123, 37, 0.3);
+      }
+
+      .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .service-icon {
+        transition: all 0.3s ease;
+      }
+
+      .service-card:hover .service-icon {
+        transform: scale(1.1);
+        color: #ff7b25;
+      }
+
+      .orbit {
+        animation: orbit 20s linear infinite;
+      }
+
+      @keyframes orbit {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .pulse {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.05);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .wave {
+        animation: wave 3s ease-in-out infinite;
+      }
+
+      @keyframes wave {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .glow {
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes glow {
+        from {
+          box-shadow: 0 0 10px rgba(0, 86, 179, 0.5);
+        }
+
+        to {
+          box-shadow: 0 0 20px rgba(0, 86, 179, 0.8);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full z-50 bg-white shadow-md transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-50 items-center">
+          <div class="flex justify-center items-center gap-x-2">
+            <img class="w-14 py-4" src="image.png" alt="logo bri" />
+            <div>
+              <h1 class="font-bold text-2xl text-blue-900">BRI</h1>
+              <h1 class="font-bold">Kantor Cabang Metro</h1>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-center space-x-8">
+              <a
+                href="#home"
+                class="text-blue-900 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                >Beranda</a
+              >
+              <a
+                href="#about"
+                class="text-blue-900 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                >Tentang Kami</a
+              >
+              <a
+                href="#services"
+                class="text-blue-900 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                >Layanan</a
+              >
+              <a
+                href="#products"
+                class="text-blue-900 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                >Produk</a
+              >
+              <a
+                href="#contact"
+                class="text-blue-900 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                >Kontak</a
+              >
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <a
+              href="#contact"
+              class="btn-primary text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider"
+              >Hubungi Kami</a
+            >
+          </div>
+          <div class="-mr-2 flex md:hidden">
+            <button
+              type="button"
+              class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-blue-900 hover:text-orange-500 focus:outline-none transition duration-150 ease-in-out"
+            >
+              <i data-feather="menu"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="mobile-menu hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#home"
+            class="block px-3 py-2 rounded-md text-base font-medium text-blue-900 hover:text-orange-500"
+            >Beranda</a
+          >
+          <a
+            href="#about"
+            class="block px-3 py-2 rounded-md text-base font-medium text-blue-900 hover:text-orange-500"
+            >Tentang Kami</a
+          >
+          <a
+            href="#services"
+            class="block px-3 py-2 rounded-md text-base font-medium text-blue-900 hover:text-orange-500"
+            >Layanan</a
+          >
+          <a
+            href="#products"
+            class="block px-3 py-2 rounded-md text-base font-medium text-blue-900 hover:text-orange-500"
+            >Produk</a
+          >
+          <a
+            href="#contact"
+            class="block px-3 py-2 rounded-md text-base font-medium text-blue-900 hover:text-orange-500"
+            >Kontak</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-20 overflow-hidden">
+      <div id="vanta-bg" class="absolute inset-0 w-full h-full"></div>
+      <div class="hero-gradient absolute inset-0 opacity-90"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between py-24 md:py-32"
+        >
+          <div
+            class="md:w-1/2 mb-12 md:mb-0"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+            >
+              Solusi Keuangan <span class="text-orange-400">Terbaik</span> untuk
+              Anda
+            </h1>
+            <p class="text-lg text-blue-100 mb-8 max-w-lg">
+              BRI Cabang Metro Lampung memberikan pelayanan terbaik dengan
+              berbagai produk perbankan yang inovatif dan solutif.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <a
+                href="#products"
+                class="btn-primary text-white px-8 py-3 rounded-full text-sm font-bold uppercase tracking-wider text-center"
+                >Produk Kami</a
+              >
+              <a
+                href="#contact"
+                class="bg-white text-blue-900 px-8 py-3 rounded-full text-sm font-bold uppercase tracking-wider text-center hover:bg-gray-100 transition-colors duration-300"
+                >Hubungi Kami</a
+              >
+            </div>
+          </div>
+          <div
+            class="md:w-1/2 relative"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div class="relative">
+              <img
+                class="w-45"
+                src="bri-place.png"
+                alt="Banking Services"
+                class="rounded-xl shadow-2xl w-full max-w-lg mx-auto wave"
+              />
+              <div
+                class="absolute -bottom-6 -left-6 bg-orange-500 rounded-xl w-24 h-24 z-0"
+              ></div>
+              <div
+                class="absolute -top-6 -right-6 bg-blue-500 rounded-xl w-24 h-24 z-0"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="p-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-4xl font-bold text-blue-900 mb-2">125+</div>
+            <div class="text-gray-600">Nasabah Aktif</div>
+          </div>
+          <div class="p-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-4xl font-bold text-blue-900 mb-2">50+</div>
+            <div class="text-gray-600">Produk Unggulan</div>
+          </div>
+          <div class="p-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-4xl font-bold text-blue-900 mb-2">15+</div>
+            <div class="text-gray-600">Tahun Berpengalaman</div>
+          </div>
+          <div class="p-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="text-4xl font-bold text-blue-900 mb-2">99%</div>
+            <div class="text-gray-600">Kepuasan Nasabah</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12" data-aos="fade-right">
+            <div class="relative">
+              <img
+                src="office.png"
+                alt="BRI Office"
+                class="rounded-xl shadow-lg w-full"
+              />
+              <div
+                class="absolute -bottom-6 -left-6 bg-orange-500 rounded-xl w-24 h-24 z-0"
+              ></div>
+              <div
+                class="absolute -top-6 -right-6 bg-blue-500 rounded-xl w-24 h-24 z-0"
+              ></div>
+            </div>
+          </div>
+          <div class="md:w-1/2" data-aos="fade-left">
+            <h2 class="text-3xl font-bold text-blue-900 mb-6">
+              Tentang BRI Cabang Metro Lampung
+            </h2>
+            <p class="text-gray-600 mb-6">
+              BRI Cabang Metro Lampung telah hadir selama lebih dari 15 tahun
+              memberikan pelayanan perbankan terbaik bagi masyarakat Lampung.
+              Kami berkomitmen untuk memberikan solusi keuangan yang inovatif
+              dan terjangkau.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
+                  <i data-feather="check-circle" class="text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-900">Visi Kami</h3>
+                  <p class="text-gray-600">
+                    Menjadi bank terdepan yang memberikan nilai tambah bagi
+                    semua stakeholder.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
+                  <i data-feather="check-circle" class="text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-900">Misi Kami</h3>
+                  <p class="text-gray-600">
+                    Memberikan layanan perbankan terbaik dan solusi keuangan
+                    yang inovatif bagi seluruh lapisan masyarakat.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
+                  <i data-feather="check-circle" class="text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-900">
+                    Nilai Kami
+                  </h3>
+                  <p class="text-gray-600">
+                    Integritas, profesionalisme, fokus pada nasabah, keunggulan,
+                    dan tanggung jawab sosial.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#services"
+              class="btn-primary inline-block mt-8 text-white px-8 py-3 rounded-full text-sm font-bold uppercase tracking-wider"
+              >Pelajari Lebih Lanjut</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-blue-900 mb-4">Layanan Kami</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Kami menyediakan berbagai layanan perbankan yang lengkap untuk
+            memenuhi semua kebutuhan keuangan Anda.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="service-card p-8 bg-gray-50 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-xl"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="service-icon bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i data-feather="credit-card" class="text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-4">Kartu Kredit</h3>
+            <p class="text-gray-600 mb-4">
+              Nikmati kemudahan bertransaksi dengan kartu kredit BRI dengan
+              berbagai keuntungan dan promo menarik.
+            </p>
+            <a href="#" class="text-orange-500 font-medium flex items-center">
+              Selengkapnya
+              <i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+          </div>
+          <div
+            class="service-card p-8 bg-gray-50 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-xl"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="service-icon bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i data-feather="home" class="text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-4">KPR</h3>
+            <p class="text-gray-600 mb-4">
+              Wujudkan impian memiliki rumah dengan KPR BRI yang terjangkau dan
+              proses cepat.
+            </p>
+            <a href="#" class="text-orange-500 font-medium flex items-center">
+              Selengkapnya
+              <i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+          </div>
+          <div
+            class="service-card p-8 bg-gray-50 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-xl"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="service-icon bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i data-feather="dollar-sign" class="text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-4">Pinjaman Usaha</h3>
+            <p class="text-gray-600 mb-4">
+              Dukung perkembangan bisnis Anda dengan pinjaman modal usaha dari
+              BRI dengan bunga kompetitif.
+            </p>
+            <a href="#" class="text-orange-500 font-medium flex items-center">
+              Selengkapnya
+              <i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+          </div>
+          <div
+            class="service-card p-8 bg-gray-50 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-xl"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="service-icon bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i data-feather="smartphone" class="text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-4">BRImo</h3>
+            <p class="text-gray-600 mb-4">
+              Lakukan transaksi perbankan kapan saja dan di mana saja dengan
+              aplikasi mobile banking BRI.
+            </p>
+            <a href="#" class="text-orange-500 font-medium flex items-center">
+              Selengkapnya
+              <i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+          </div>
+          <div
+            class="service-card p-8 bg-gray-50 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-xl"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div
+              class="service-icon bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i data-feather="globe" class="text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-4">
+              Internet Banking
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Akses layanan perbankan secara online dengan mudah dan aman
+              melalui internet banking BRI.
+            </p>
+            <a href="#" class="text-orange-500 font-medium flex items-center">
+              Selengkapnya
+              <i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+          </div>
+          <div
+            class="service-card p-8 bg-gray-50 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-xl"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div
+              class="service-icon bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i data-feather="award" class="text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-4">Tabungan Emas</h3>
+            <p class="text-gray-600 mb-4">
+              Investasi emas secara digital yang praktis dan menguntungkan
+              dengan Tabungan Emas BRI.
+            </p>
+            <a href="#" class="text-orange-500 font-medium flex items-center">
+              Selengkapnya
+              <i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-blue-900 mb-4">Produk Unggulan</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Temukan produk perbankan terbaik dari BRI yang dirancang khusus
+            untuk memenuhi kebutuhan keuangan Anda.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="feature-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="http://static.photos/finance/640x360/2"
+                alt="BRImo"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"
+              ></div>
+              <div class="absolute bottom-4 left-4">
+                <h3 class="text-xl font-bold text-white">BRImo</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-4">
+                Aplikasi mobile banking BRI yang memudahkan Anda melakukan
+                berbagai transaksi perbankan kapan saja dan di mana saja.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-start">
+                  <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                  <span class="text-gray-700">Transfer antar bank</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                  <span class="text-gray-700">Pembayaran tagihan</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                  <span class="text-gray-700">Investasi digital</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn-primary inline-block text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider"
+                >Pelajari Lebih Lanjut</a
+              >
+            </div>
+          </div>
+          <div
+            class="feature-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="http://static.photos/finance/640x360/3"
+                alt="KPR BRI"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"
+              ></div>
+              <div class="absolute bottom-4 left-4">
+                <h3 class="text-xl font-bold text-white">KPR BRI</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-4">
+                Kredit Pemilikan Rumah dari BRI dengan suku bunga kompetitif dan
+                proses yang cepat serta mudah.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-start">
+                  <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                  <span class="text-gray-700">Suku bunga kompetitif</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                  <span class="text-gray-700">Tenor hingga 20 tahun</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                  <span class="text-gray-700">Proses cepat dan mudah</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn-primary inline-block text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider"
+                >Pelajari Lebih Lanjut</a
+              >
+            </div>
+          </div>
+          <div
+            class="feature-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="http://static.photos/finance/640x360/4"
+                alt="Tabungan Emas"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"
+              ></div>
+              <div class="absolute bottom-4 left-4">
+                <h3 class="text-xl font-bold text-white">Tabungan Emas</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-4">
+                Investasi emas digital yang praktis dengan fitur beli, jual, dan
+                titip emas secara online melalui aplikasi BRImo.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-start">
+                  <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                  <span class="text-gray-700">Mulai dari 0,01 gram</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                  <span class="text-gray-700">Harga mengikuti pasar</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                  <span class="text-gray-700">Bisa dicairkan kapan saja</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn-primary inline-block text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider"
+                >Pelajari Lebih Lanjut</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-blue-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold mb-4">Apa Kata Nasabah Kami</h2>
+          <p class="text-blue-200 max-w-2xl mx-auto">
+            Dengarkan pengalaman nyata dari nasabah kami yang telah menggunakan
+            layanan BRI Cabang Metro Lampung.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-blue-800 rounded-xl p-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center mb-4">
+              <div class="flex-shrink-0 mr-4">
+                <img
+                  src="http://static.photos/people/120x120/1"
+                  alt="Testimonial 1"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold">Budi Santoso</h4>
+                <p class="text-blue-300 text-sm">Pengusaha</p>
+              </div>
+            </div>
+            <p class="text-blue-100 italic">
+              "Pelayanan KPR BRI sangat cepat dan prosesnya mudah. Staf di BRI
+              Cabang Metro Lampung sangat ramah dan profesional."
+            </p>
+            <div class="flex mt-4">
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+            </div>
+          </div>
+          <div
+            class="bg-blue-800 rounded-xl p-8"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center mb-4">
+              <div class="flex-shrink-0 mr-4">
+                <img
+                  src="http://static.photos/people/120x120/2"
+                  alt="Testimonial 2"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold">Siti Rahayu</h4>
+                <p class="text-blue-300 text-sm">Ibu Rumah Tangga</p>
+              </div>
+            </div>
+            <p class="text-blue-100 italic">
+              "Aplikasi BRImo sangat membantu saya dalam mengatur keuangan
+              keluarga. Transaksi jadi lebih praktis dan cepat."
+            </p>
+            <div class="flex mt-4">
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+            </div>
+          </div>
+          <div
+            class="bg-blue-800 rounded-xl p-8"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex items-center mb-4">
+              <div class="flex-shrink-0 mr-4">
+                <img
+                  src="http://static.photos/people/120x120/3"
+                  alt="Testimonial 3"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold">Agus Setiawan</h4>
+                <p class="text-blue-300 text-sm">Wiraswasta</p>
+              </div>
+            </div>
+            <p class="text-blue-100 italic">
+              "Pinjaman modal usaha dari BRI membantu saya mengembangkan bisnis.
+              Prosesnya cepat dan persyaratannya tidak ribet."
+            </p>
+            <div class="flex mt-4">
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+              <i data-feather="star" class="text-yellow-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-blue-900 mb-4">Hubungi Kami</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Kami siap membantu Anda. Silakan hubungi kami melalui informasi
+            kontak di bawah ini atau isi formulir untuk pertanyaan lebih lanjut.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12" data-aos="fade-right">
+            <div class="bg-blue-50 rounded-xl p-8 h-full">
+              <h3 class="text-xl font-bold text-blue-900 mb-6">
+                Informasi Kontak
+              </h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
+                    <i data-feather="map-pin" class="text-blue-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-blue-900">Alamat Kantor</h4>
+                    <p class="text-gray-600">
+                      Jl. Jenderal Sudirman No. 123, Metro, Lampung 34111
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
+                    <i data-feather="phone" class="text-blue-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-blue-900">Telepon</h4>
+                    <p class="text-gray-600">(0725) 1234567</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
+                    <i data-feather="mail" class="text-blue-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-blue-900">Email</h4>
+                    <p class="text-gray-600">bri.metro@bri.co.id</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
+                    <i data-feather="clock" class="text-blue-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-blue-900">Jam Operasional</h4>
+                    <p class="text-gray-600">Senin-Jumat: 08.00-17.00 WIB</p>
+                    <p class="text-gray-600">Sabtu: Tutup</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h4 class="font-semibold text-blue-900 mb-4">Ikuti Kami</h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-blue-200 transition-colors duration-300"
+                  >
+                    <i data-feather="facebook"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-blue-200 transition-colors duration-300"
+                  >
+                    <i data-feather="instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-blue-200 transition-colors duration-300"
+                  >
+                    <i data-feather="twitter"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-blue-200 transition-colors duration-300"
+                  >
+                    <i data-feather="linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2" data-aos="fade-left">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+              <h3 class="text-xl font-bold text-blue-900 mb-6">Kirim Pesan</h3>
+              <form>
+                <div class="mb-6">
+                  <label for="name" class="block text-gray-700 font-medium mb-2"
+                    >Nama Lengkap</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="Masukkan nama Anda"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="email"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="Masukkan email Anda"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="phone"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Nomor Telepon</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="Masukkan nomor telepon Anda"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="subject"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Subjek</label
+                  >
+                  <select
+                    id="subject"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  >
+                    <option value="" selected disabled>Pilih subjek</option>
+                    <option value="account">Pembukaan Rekening</option>
+                    <option value="kpr">KPR</option>
+                    <option value="loan">Pinjaman</option>
+                    <option value="other">Lainnya</option>
+                  </select>
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="message"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Pesan</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="5"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="Tulis pesan Anda"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn-primary w-full text-white px-6 py-3 rounded-lg text-sm font-bold uppercase tracking-wider"
+                >
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full bg-gray-200">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1986.9656227547648!2d105.30212103992402!3d-5.114783505965864!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40bbf0837ec8ad%3A0xefca7f87235c6122!2sBRI%20Cabang%20Metro!5e0!3m2!1sid!2sid!4v1763123813960!5m2!1sid!2sid"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div>
+            <img src="image.png" alt="BRI Logo" class="h-12 w-auto mb-4" />
+            <p class="text-blue-200">
+              BRI Cabang Metro Lampung memberikan layanan perbankan terbaik
+              untuk mendukung pertumbuhan ekonomi masyarakat Lampung.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Tautan Cepat</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-blue-200 hover:text-orange-400 transition-colors duration-300"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-blue-200 hover:text-orange-400 transition-colors duration-300"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-blue-200 hover:text-orange-400 transition-colors duration-300"
+                  >Layanan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="text-blue-200 hover:text-orange-400 transition-colors duration-300"
+                  >Produk</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-blue-200 hover:text-orange-400 transition-colors duration-300"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Layanan</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-orange-400 transition-colors duration-300"
+                  >BRImo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-orange-400 transition-colors duration-300"
+                  >Kartu Kredit</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-orange-400 transition-colors duration-300"
+                  >KPR</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-orange-400 transition-colors duration-300"
+                  >Pinjaman Usaha</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-orange-400 transition-colors duration-300"
+                  >Tabungan Emas</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Kontak</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i data-feather="map-pin" class="mr-2 text-blue-300"></i>
+                <span class="text-blue-200"
+                  >Jl. Jenderal Sudirman No. 123, Metro, Lampung</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i data-feather="phone" class="mr-2 text-blue-300"></i>
+                <span class="text-blue-200">(0725) 1234567</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="mail" class="mr-2 text-blue-300"></i>
+                <span class="text-blue-200">bri.metro@bri.co.id</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-blue-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-blue-300 text-sm mb-4 md:mb-0">
+              © 2025 BRI Cabang Metro Lampung. Semua hak dilindungi.
+            </p>
+            <div class="flex space-x-6">
+              <a
+                href="#"
+                class="text-blue-300 hover:text-orange-400 transition-colors duration-300"
+              >
+                <i data-feather="facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-300 hover:text-orange-400 transition-colors duration-300"
+              >
+                <i data-feather="instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-300 hover:text-orange-400 transition-colors duration-300"
+              >
+                <i data-feather="twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-300 hover:text-orange-400 transition-colors duration-300"
+              >
+                <i data-feather="linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+
+      feather.replace();
+
+      // Mobile menu toggle
+      const mobileMenuButton = document.querySelector(".mobile-menu-button");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Vanta.js background
+      VANTA.GLOBE({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x3a7bd5,
+        color2: 0xff8c00,
+        size: 1.0,
+        backgroundColor: 0x0,
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 50) {
+          nav.classList.add("shadow-lg");
+          nav.classList.add("py-2");
+        } else {
+          nav.classList.remove("shadow-lg");
+          nav.classList.remove("py-2");
+        }
+      });
+
+      // Animate elements on scroll
+      const animateOnScroll = function () {
+        const elements = document.querySelectorAll(
+          ".service-card, .feature-card"
+        );
+        elements.forEach((element) => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.2;
+          if (elementPosition < screenPosition) {
+            element.classList.add("animated");
+          }
+        });
+      };
+
+      window.addEventListener("scroll", animateOnScroll);
+    </script>
+  </body>
+</html>
